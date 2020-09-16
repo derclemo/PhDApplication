@@ -2,35 +2,64 @@ Dear Professor Stadtfeld,\\
 
 in July and August 2020, several countries launched probes to Mars because at that time the gravitational forces were aligned in a particularly energy-efficient way. 
 Put differently, the gravitational forces were working for them, not against them.
-Applying this logic to complex social systems we may ask whether specific ``\textit{windows of social momentum}'' can be identified? 
-Instead of merely thinking about how to control a social network, it is equally relevant to study \textit{when is the best time to control a social network?}\\
+Applying this reasoning to social systems we may ask whether specific ``\textit{windows of social momentum}'' can be identified? 
+Instead of merely thinking about how to control a social network, we also wish to know \textit{when is the best time to control a social network?}\\
 
 In my research, I want to uncover such pockets of controllability. 
 While this is certainly an ambitious claim, I am convinced that I have the skillset, motivation and endurance to achieve this. 
 While studying for my BSc in Industrial Engineering and Management at Friedrich-Alexander-University Erlangen-Nürnberg (FAU), I became enthusiastic about computer science. 
-This motivated me and two fellow students to develop an online platform called ``kowly'' as an self-initiated project, enabling users to unearth inspiring content by sharing it with their community. 
-I thereby gained not only a strong background in technology but also rigorous problem-solving and analytical skills. 
-These skills have allowed me to deliver impact in my university projects by always seeking to strengthen the skills of each individual in the group and being open to new learnings. 
+This motivated me and two fellow students to develop an online platform called ``kowly'', enabling users to unearth inspiring content by sharing it with their community. 
+I thereby gained not only a strong background in \red{technology} but also rigorous problem-solving and analytical skills. 
+\red{These skills have allowed me to deliver impact in my university projects by always seeking to strengthen the skills of each individual in the group and being open to new learnings.}
 After my bachelors, I pursued a master's degree in Computer Science at FAU with a focus on artificial intelligence and probabilistic modeling, which I completed in July 2020. \\
 
-As part of my MSc, I've spent four months at the MIT Media Lab in the Human Dynamics group under the supervision of Professor Alex 'Sandy' Pentland, where I learned about research on exploring how social networks can influence our lives in business, health, governance, and technology. 
-In this context I conducted research for my master thesis on the topic of a ``Deep Learning-based Recommendation System for Trading Platforms'', where I developed a graph embedding algorithm based on the DeepWalk idea \cite{perozzi2014deepwalk}, but with a novel perspective on considering vertex attributes and their relatedness in the graph. 
-Instead of running random walks on the graph (like in the DeepWalk algorithm), we extended to a probability-based walk algorithm, where we accept a step in the walk only with some probability proportional to the similarity of two adjacent vertices, thus help generate more representative vector embeddings. 
+As part of my MSc, I have spent four months at the MIT Media Lab in Professor Alex `Sandy' Pentland's Human Dynamics group. 
+It is there that I have learnt a lot about social networks and how they influence our lives in business, health, governance, and technology. 
+Consequently, I wrote my master thesis on the topic of ``Deep Learning-based Recommendation System for Trading Platforms''. 
+\red{
+Shift the order of a few of the sentences below. 
+(1) You developed a recommendation system for trading strategies on eToro. 
+(2) what is eToro. 
+(3) what data do we have (ever single trade for 3 years!)
+(4) how did you do it: network embedding
+(5) what did you do different: you also embedding node properties, not just edges, and you also use edge weights. 
+(6) what is the overall main insight/result. 
+If you write concisely, you can manage to get each of those points in just one or two sentences.
+}
+I developed a graph embedding algorithm based on the DeepWalk idea \cite{perozzi2014deepwalk}, but with a novel perspective on considering vertex attributes and their relatedness in the graph. 
+Instead of running random walks on the graph (like in the DeepWalk algorithm), I have extended to a probability-based walk algorithm, where we accept a step in the walk only with some probability proportional to the similarity of two adjacent vertices, thus help generate more representative vector embeddings. 
 We used this algorithm to profile and predict the users' trading preferences and behavior by its application on a graph representation based on the information provided by a unique dataset from the eToro social trading platform. The social aspect of eToro is that its users can either make individual trades or copy other users' trades.
 Our results have shown that using the embeddings of the mimicking network as input for downstream analysis with respect to the final recommendation system delivers attractive recommendations regarding new trading strategies and new mimicking-relationships in form of a highly personalized service.\\
 
 From this time on, I was deeply fascinated by the possibilities of using the tools of computational social science to ask how we can better organize society, government, and companies. 
-Nevertheless, I am aware that I still need to overcome a variety of challenges. 
+But in order to pursue a career in this direction, I will need the help of collaborators and a strong team. 
 Your group provides an exceptional setting consisting of outstanding academic expertise in combination with innovative research projects, giving me the opportunity to venture into my sphere of interest and enhance my personal as well as professional development.
-One of your recently published papers on ``The Emergence and Stability of Groups in Social Networks'' \cite{stadtfeld2020emergence} greatly enhanced the knowledge about how social groups emerge and remain stable in various contexts.
-Based on the anticipation that the emergence and stability of social groups can be better explained by a combination of forces of attraction and repulsion, the proposed model incorporates social mechanisms on the evolution of both, positive and negative ties, which further helps to describe why individuals refrain from developing ties to out-group members.
+In one of your recent papers  \cite{stadtfeld2020emergence} explains how social groups emerge and remain stable in various contexts.
+Based on the idea that social groups interact via combination of forces of attraction and repulsion, the proposed model incorporates social mechanisms on the evolution of both positive and negative ties.
+This further helps to describe why individuals refrain from developing ties to out-group members.
+\red{
+Sentence below is long and wordy. 
+Note how I changed your sentence above into several simpler sentences. 
+Further, I would not allocate too much space to the description of the paper, in case the two page limit is tight. 
+} 
 The results on whether the two models (one only modeling forces of attraction, the other forces of attraction and repulsion) are capable of generating networks in which structural groups emerge, have shown that only the attraction and repulsion model generated stable structural groups, although the group features of the simulated network turned out to be too strongly stylized.\\
 
-In view of the initial idea on examining ``\textit{windows of social momentum}'', I see clear synergies between ongoing research within the Social Networks Lab and my competences in the research of network data. 
+In view of the initial idea on examining ``\textit{windows of social momentum}'', I see clear synergies between ongoing research within your Social Networks Lab and my research interests. 
 Your model described above sheds light on a topic identified during my time at MIT, which is towards a more sustainable design of complex systems. 
+\red{
+I feel like in the few sentences below, you mix up too many different ideas, without having a clear point. 
+Keep it simple. 
+(1) He works on stability of complex system. 
+(2) Stability is compromised by particularly dominant players. 
+(3) So far, this was studied on the network itself. 
+(3) New idea: study the centralization by measuring contractions of nodes in the embedding space. Can we observe that over time, different points move closer together? 
+(4) Use Case: eToro. Can we observe that successful traders tend to observe each other's strategies and ultimately end up all trading the same type of strategies? 
+(5) concluding sentence: This is a new approach with many applications. 
+} 
 Recent research \cite{germano2019few} emphasizes that the underlying ranking algorithms may influence society alongside economic concerns by playing an active role in the spread of misinformation, political polarization, or might even reinforce existing judgment biases.
 This is due to the fact that rankings systematically affect the information people access, as users are more likely to react on top-ranked items, which leads to self-reinforcing dynamics according to which popular items become increasingly more popular, namely ``rich-get-richer dynamics''. 
-This observation applies to a large class of interacting systems ranging from small scale online platforms up to globally interconnected social and economic systems, and is known to carry a risk of centralisation, in the sense that the removal of a few dominating players would collapse the entire system. 
+This observation applies to a large class of interacting systems ranging from small scale online platforms up to globally interconnected social and economic systems, and is known to carry a risk of centralization, in the sense that the removal of a few dominating players would collapse the entire system. 
+\red{I think this sentence is from my paper with Sandy, which is now accepted by PNAS. So you can cite it. (not published yet, so called it `forthcoming').} 
 This is why we need to reconsider how one can tell that a ``player'' of the system is becoming too large causing a formation of disproportional dominance. 
 To be able to answer this question, I organized that we can use the eToro dataset within the Social Networks Lab.
 We could think of an approach, where we embed the mimicking network at different times and track the network evolution over time, which we then use to study if self-accelerating dynamics in the embedding space can be observed. 

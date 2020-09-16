@@ -7,6 +7,12 @@
 \addtolength{\footskip}{-20mm}
 \usepackage{etoolbox}
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+
+\usepackage[dvipsnames,usenames]{color} 
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+
 \begin{document}
 
 \newcommand{\subtitle}[1]{%
