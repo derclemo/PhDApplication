@@ -1,7 +1,7 @@
 Dear Professor Stadtfeld,\\
 
 in July and August 2020, several countries launched probes to Mars because at that time the gravitational forces were aligned in a particularly energy-efficient way. 
-Put differently, the gravitational forces were working for them, not against them.
+Put differently, the gravitational forces were working for the probes, not against them.
 Applying this reasoning to social systems we may ask whether specific ``\textit{windows of social momentum}'' can be identified? 
 Instead of merely thinking about how to control a social network, we also wish to know \textit{when is the best time to control a social network?}\\
 
@@ -14,46 +14,45 @@ After my bachelors, I pursued a master's degree in Computer Science at FAU with 
 
 As part of my MSc, I have spent four months at the MIT Media Lab in Professor Alex `Sandy' Pentland's Human Dynamics group. 
 It is there that I have learnt a lot about social networks and how they influence our lives in business, health, governance, and technology.
-One particularly interesting type of social systems are the financial systems.
-Consequently, I wrote my master thesis on the topic of ``Deep Learning-based Recommendation System for Trading Platforms''. 
-My work has revolved around a recommendation system for trading strategies on a trading platform known as ``eToro'' (http://www.etoro.com).
-The most important feature of eToro is that it provides a social network platform, where users can easily look at other users trades and performance, and follow others’ trades. 
-Our data came from this platform, and is composed of over 5.8 million trades over three years.  
-Towards the final recommendation system, we applied a network embedding approach by first deriving a suitable graph representation from the eToro data.
-Thereby relevant data is incorporated into the nodes and edges of the graph, which we then used as knowledge base for the next step.
-In order to use the information carried by the graph, we developed a graph embedding algorithm based on the DeepWalk idea \cite{perozzi2014deepwalk}, but other than DeepWalk, we also embedded node properties, not just edges.
-We extended to a probability-based walk algorithm based on edge weights, where we accept a step in the walk only with some probability proportional to the similarity of two adjacent vertices.
+\red{I removed the sentence of financial systems for a few reasons. 
+It is not needed. 
+But more importantly, you do not want to evoke the impression that you are a `finance' guy. 
+Yes, finance is one system that you will study during your PhD. 
+But since he is a computational social scientist, he might want to distance himself (and by proxy, his students) from finance (probably not, but just playing it save). 
+} 
+While at MIT, I wrote my master thesis on the topic of ``Deep Learning-based Recommendation System for Trading Platforms''. 
+\red{Add a reference to your MSc thesis.} 
+Specifically, I have developed a strategy recommendation system on retail trading platform eToro (http://www.etoro.com).
+One of eToro's distinguishing features is that users can observe the trades of other users and decide to automatically mimic all of their trades.
+The Human Dynamics Lab has access to detailed information on all trades that have been executing on eToro over a period of three years. 
+To develop a suitable recommendation system, we have embedded the eToro mimicking network (who follows whom). 
+\red{I have removed some information here. Since sometimes, being a little more vague, yet not ambiguous, may be helpful. If you provide too much information, you might raise questions you don't want to answer in just 2 pages.} 
+To this end, we have developed a graph embedding algorithm based on DeepWalk \cite{perozzi2014deepwalk}, but additionally also took into consideration network node properties (i.e. trader characteristics). 
 Using the network embedding as input for downstream analysis tasks, we were able to profile and predict the users' trading preferences and behavior. 
 Based on these insights, we demonstrated that our recommendation system is capable of providing each user with a list of either new relevant trading strategies or new follower-followee-relationships with similar taste.\\
 
-\red{@Sandro, I completely renewed the description of my masters project, used your proposed structure. What do you think?}
-
-From this time on, I was deeply fascinated by the possibilities of using the tools of computational social science to ask how we can better organize society, government, and companies. 
+From this time onwards, I was fascinated by the tools of computational social science to better organize society, government, and companies. 
 But in order to pursue a career in this direction, I will need the help of collaborators and a strong team. 
 Your group provides an exceptional setting consisting of outstanding academic expertise in combination with innovative research projects, giving me the opportunity to venture into my sphere of interest and enhance my personal as well as professional development.
 One of your recent papers \cite{stadtfeld2020emergence} explains how social groups emerge and remain stable in various contexts.
 Based on the idea that social groups interact via combination of forces of attraction and repulsion, the proposed model incorporates social mechanisms on the evolution of both positive and negative ties.
 This further helps to describe why individuals refrain from developing ties to out-group members.
-The results have shown that only the attraction and repulsion model generated stable structural groups, although the group features of the simulated network turned out to be too strongly stylized.\\
-
-\red{@Sandro, this summary should be sufficient, the requirements for the letter just talk about a brief summary of a paper by the  group that is particulary relevant for my future work}
+The results have shown that only the attraction and repulsion model generated stable structural groups, although the group features of the simulated network turned out to be too strongly stylized.
+\red{Is the second half of the sentence, after ``although'' really needed?} \\
 
 In view of the initial idea on examining ``\textit{windows of social momentum}'', I see clear synergies between ongoing research within your Social Networks Lab and my research interests. 
 Your research on the stability of complex system sheds light on a topic identified during my time at MIT, which is towards a more sustainable design of complex systems.
-Among other factors, stability is compromised by particularly dominant players in the underlying system.
-This observation applies to of a large class of interacting systems ranging from small scale trading platforms up to globally interconnected social and economic systems, and is known to carry a risk of centralization, in the sense that the removal of a few dominating players would collapse the entire system \cite{lera2017prediction}. \textbf{great! added your citation :-)}
-This is why we need to reconsider how one can tell that a ``player'' of the system is becoming too large causing a formation of disproportional dominance. 
-So far, this was studied on the network itself. 
-We could think of a new approach, where we study the centralization by measuring contractions of nodes in the embedding space.
-In particular, we want to investigate whether, in the course of time, self-accelerating dynamics can be observed in the embedding space with the effect that different points move closer together.
-Financial systems such as eToro are with no doubt driven by the collective behavior of humans, which is why this is a suitable use case.
-Therefore, I organized that we can use the eToro dataset within this project.  
-In this case, the question of centralization can be answered, for example, by testing whether you can observe that successful traders tend to observe each other's strategies and ultimately end up all trading the same type of strategies.
-%This approach can help us to understand how social influence alters the dynamics of the crowd.
-Moreover, adopting social theories into the analysis of financial systems can help to better explain the many mysterious phenomena in the markets, such as the market crash. 
-However, this is a new approach with many applications.\\
-
-\red{@Sandro, do you think this gets more clear now?}
+Among other factors, stability is compromised by particularly dominant players in the underlying system \cite{lera2017prediction}.
+So far, the formation of such dominance and associated destabilization was studied on the network itself. 
+I propose that, instead, we study these issues by tracking the dynamics of the network in an embedding space. 
+Concretely, I would like to analyze the co-movement of nodes (point clouds) in the embedding space. 
+Following your idea of interacting forces in social systems, we can then look for constellations in which the point crowds are contracting (attracting force) or repelling (repulsing force). 
+As a first use case, I would like to rely on the eToro data set to which I still have access. 
+Indeed, essentially by construction, eToro is driven by the collective behavior of humans, which is why I think it will make for a valuable data set. 
+Can we observe that successful traders tend to observe each other's strategies and ultimately end up all trading the same type of strategies (contraction)? 
+Or is there pressure to diversify, in order to attract new mimickers (repulsion)? 
+And how to disentangle these two orthogonal situations? 
+Overall, this approach can help us better understand the complex workings of human interactions. 
 
 In conclusion, being a doctoral student at ETH Zürich, a leading institution in the heart of Europe, is an unique opportunity to dedicate myself wholeheartedly as I am confident that this is my career's best turn to not only pursue my ultimate career goal but also satisfy my curiosity for understanding theories in computational social science. 
 It has always been my age-long ambition to become a member of the computational social science community, and I am convinced that there is no better place to continue my academic career than the Social Networks Lab. 
